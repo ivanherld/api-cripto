@@ -9,7 +9,12 @@ class Settings(BaseSettings):
     debug: bool = False
 
     # CORS — ampliar cuando se integre el frontend
-    cors_origins: list[str] = ["http://localhost:3000", "http://localhost:5173"]
+    cors_origins: list[str] = [
+        "http://localhost:3000",
+        "http://localhost:5173",
+        "https://cryptolensv2.netlify.app",
+        "https://cripto-front-flax.vercel.app",
+    ]
 
     # Límites por defecto
     default_candle_limit: int = 200
