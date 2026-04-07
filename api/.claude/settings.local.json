@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Ivan_/Documents/Proyectos/Api - finanzas/**)",
+      "Bash(python -c ':*)",
+      "Bash(python -m mypy api/ --ignore-missing-imports --no-strict-optional)",
+      "Bash(python -W error::FutureWarning -c ':*)",
+      "Bash(python -W error -c ':*)",
+      "Bash(pip show:*)",
+      "Bash(curl -s \"http://localhost:8000/api/v1/analysis/BTC/15m\")"
+    ]
+  }
+}
